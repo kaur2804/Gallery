@@ -52,7 +52,7 @@ rightArrow.onmouseover = function () {
 var exit_Btn = document.getElementById("exitBtn");
 exit_Btn.onclick = function() {
     if (confirm("Are you sure you want to exit?")) {
-        window.location.href = "https://www.google.com"; 
+        window.close(); 
 
     }
 }
