@@ -30,7 +30,7 @@ for (var i = 0; i < Images.length; i++) {
 
 
 // Event listener for clicking on previous button
-leftArrow.onmouseover = function () {
+leftArrow.onclick = function () {
     currentImageIndex--;
     if (currentImageIndex < 0) {
         currentImageIndex = Images.length - 1;
@@ -39,7 +39,7 @@ leftArrow.onmouseover = function () {
 };
 
 // Event listener for clicking on next button
-rightArrow.onmouseover = function () {
+rightArrow.onclick = function () {
     currentImageIndex++;
     if (currentImageIndex >= Images.length) {
         currentImageIndex = 0;
